@@ -14,7 +14,7 @@ fetch('https://www.course-api.com/javascript-store-products')
         products.forEach(product => {
             const listItem = document.createElement('li');
             listItem.textContent = `${product.title} - $${product.price}`;
-            productList.appendChild(listItem);
+            productList.appendChild(listItem); //dynamically lists items
         });
 
     })
